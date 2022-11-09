@@ -12,7 +12,13 @@ public class GreetingController {
 
     @GettMapping (value = "/{num1}/{num2}")
     public float Getcalc(@PathVariable float num1, @PathVariable float num2){
-        return num1+num2;
+        String erro = "503 (BAD_REQUEST)";
+
+        if((!num1.substring(3).matches("[0-9*"))||((!num2.substring(3).matches("[0-9*")){
+            return num1+num2;
+        } else{
+            return erro;
+        }
 
     }
 
