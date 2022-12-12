@@ -2,15 +2,26 @@ package com.tads.ifms.projetoAula.exception;
 
 import java.util.Date;
 
-public class ExceptionResponse {
+public class ExceptionDetails {
     private Date timestamp;
     private String message;
     private String details;
 
-    public ExceptionResponse(Date timestamp, String message, String details) {
+    public String getStatusCode() {
+        return statusCode;
+    }
+
+    public void setStatusCode(String statusCode) {
+        this.statusCode = statusCode;
+    }
+
+    private String statusCode;
+
+    public ExceptionDetails(Date timestamp, String message, String details, String statusCode) {
         this.timestamp = timestamp;
         this.message = message;
         this.details = details;
+        this.statusCode = statusCode;
     }
 
     public Date getTimestamp() {

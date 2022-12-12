@@ -1,4 +1,4 @@
-package br.edu.ifms.bhaskaramult.exception.handler;
+package com.tads.ifms.projetoAula.exception.handler;
 
 import br.edu.ifms.bhaskaramult.exception.ExceptionDetails;
 import br.edu.ifms.bhaskaramult.exception.NotNumericException;

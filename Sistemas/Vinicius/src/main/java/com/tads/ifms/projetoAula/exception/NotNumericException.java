@@ -1,4 +1,4 @@
-package br.edu.ifms.bhaskaramult.exception;
+package com.tads.ifms.projetoAula.exception;
 
 public class NotNumericException extends RuntimeException {
 
